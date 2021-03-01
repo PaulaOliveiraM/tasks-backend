@@ -69,8 +69,8 @@ pipeline {
 
         stage('Deploy Prod') {
             steps {
-                sh 'sudo -A docker-compose build'
-                sh 'sudo -A docker-compose up -d'
+                sh 'sudo -S docker-compose build'
+                sh 'sudo -S docker-compose up -d'
             }
 
         }
